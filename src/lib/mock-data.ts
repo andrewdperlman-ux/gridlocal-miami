@@ -21,7 +21,7 @@ export const mockArticles: Article[] = [
     `,
     featuredImage: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1200&h=630&fit=crop",
     category: "Events",
-    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
+    author: { name: "GridLocal AI", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=gridlocal&backgroundColor=ff4500" },
     publishedAt: "2026-03-22T10:00:00Z",
     readingTime: 4,
     tags: ["supercar saturday", "exotic cars", "bal harbour", "miami"],
@@ -46,7 +46,7 @@ export const mockArticles: Article[] = [
     `,
     featuredImage: "https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?w=1200&h=630&fit=crop",
     category: "Events",
-    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
+    author: { name: "GridLocal AI", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=gridlocal&backgroundColor=ff4500" },
     publishedAt: "2026-03-20T08:30:00Z",
     readingTime: 5,
     tags: ["wynwood", "car meet", "miami", "street cars", "JDM"],
@@ -72,7 +72,7 @@ export const mockArticles: Article[] = [
     `,
     featuredImage: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&h=630&fit=crop",
     category: "Spotlights",
-    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
+    author: { name: "GridLocal AI", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=gridlocal&backgroundColor=ff4500" },
     publishedAt: "2026-03-18T14:00:00Z",
     readingTime: 6,
     tags: ["brickell", "exotic cars", "car spotting", "ferraris", "miami guide"],
@@ -97,7 +97,7 @@ export const mockArticles: Article[] = [
     `,
     featuredImage: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&h=630&fit=crop",
     category: "News",
-    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
+    author: { name: "GridLocal AI", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=gridlocal&backgroundColor=ff4500" },
     publishedAt: "2026-03-15T09:00:00Z",
     readingTime: 5,
     tags: ["auto show", "miami", "2026", "ferrari", "electric cars"],
@@ -121,7 +121,7 @@ export const mockArticles: Article[] = [
     `,
     featuredImage: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&h=630&fit=crop",
     category: "Market Trends",
-    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
+    author: { name: "GridLocal AI", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=gridlocal&backgroundColor=ff4500" },
     publishedAt: "2026-03-12T11:00:00Z",
     readingTime: 7,
     tags: ["market trends", "exotic cars", "investment", "ferrari", "porsche"],
@@ -147,7 +147,7 @@ export const mockArticles: Article[] = [
     `,
     featuredImage: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200&h=630&fit=crop",
     category: "Buyer Guides",
-    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
+    author: { name: "GridLocal AI", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=gridlocal&backgroundColor=ff4500" },
     publishedAt: "2026-03-08T13:00:00Z",
     readingTime: 9,
     tags: ["buyer guide", "exotic cars", "first time buyer", "miami", "porsche", "ferrari"],
@@ -170,9 +170,9 @@ export const mockListings: Listing[] = [
     description:
       "Stunning example of the naturally aspirated V10 masterpiece. Arancio Borealis (pearl orange) exterior over black Alcantara interior. Full PPF, ceramic coating, titanium Akrapovic exhaust. 1 owner, always stored in climate-controlled garage. Never tracked. Full Lamborghini service history at Prestige Imports Miami.",
     images: [
-      "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "PrivateSeller",
@@ -195,9 +195,9 @@ export const mockListings: Listing[] = [
     description:
       "Frame-off restoration completed 2022. Wimbledon White with Parchment interior. Matching numbers 390 FE big block V8. 4-speed toploader manual. Concours-level restoration with correct date-coded parts throughout. Show winner — took Best of Show at Palm Beach Concours 2024.",
     images: [
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1547744152-14d985cb937f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1547744152-14d985cb937f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1547744152-14d985cb937f?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Barrett-Jackson",
@@ -220,9 +220,9 @@ export const mockListings: Listing[] = [
     description:
       "One of the last great naturally aspirated manual sports cars. Guards Red with black leather sport seats. 6-speed manual transmission (the one to have). Clubsport package with roll cage, fire extinguisher, and harness bar. Sport Chrono, PCCB ceramic brakes. Absolutely immaculate.",
     images: [
-      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1611651338502-8e89136a3591?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1611651338502-8e89136a3591?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1611651338502-8e89136a3591?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Braman Motorcars",
@@ -245,8 +245,8 @@ export const mockListings: Listing[] = [
     description:
       "Championship White FK8 with extensive tasteful modifications. Hondata FlashPro tune, Tein coilovers, Enkei RPF1 wheels, Injen intake, GReddy exhaust. Stock engine internals — all power mods are bolt-on, nothing forced. Street legal, daily driven. Clean title, no accidents.",
     images: [
-      "https://images.unsplash.com/photo-1679239872583-5aeaaee8e498?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1679239872583-5aeaaee8e498?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1606611013016-969c19ba27b5?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1606611013016-969c19ba27b5?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Cars & Bids",
@@ -268,9 +268,9 @@ export const mockListings: Listing[] = [
     description:
       "Ferrari's first series-production PHEV hypercar. Commissioned through the Ferrari atelier program in a unique bespoke Grigio Ferro with yellow racing stripe. Assetto Fiorano package with Multimatic shock absorbers, pyrolytic carbon fiber seats, and Michelin Pilot Sport Cup 2R tires. Under 2,000 miles. Extraordinary.",
     images: [
-      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Braman Motorcars",
@@ -293,8 +293,8 @@ export const mockListings: Listing[] = [
     description:
       "The pinnacle of American muscle. Fathom Green over black vinyl bench seat. LS6 454 cubic inch V8 — the most powerful engine available to the public from any American manufacturer in 1970. Numbers matching. M21 4-speed close-ratio manual. Marti Report and build sheet included. A true investment-grade collector car.",
     images: [
-      "https://images.unsplash.com/photo-1612544448445-b8232cff3b6c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1612544448445-b8232cff3b6c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Mecum Auctions",
@@ -317,8 +317,8 @@ export const mockListings: Listing[] = [
     description:
       "Full TRA Kyoto Rocket Bunny widebody kit, professionally installed with matching paint. JB4 tune, downpipe, and charge pipe for approximately 450whp. KW V3 coilovers. Volk Racing TE37 Ultra 19-inch wheels. Recaro bucket seats. Daily driveable but properly fast. One of the cleanest Supras in South Florida.",
     images: [
-      "https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1632245889029-e406faaa34cd?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1632245889029-e406faaa34cd?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Cars & Bids",
@@ -340,8 +340,8 @@ export const mockListings: Listing[] = [
     description:
       "The controversial but spectacular new C63 — a 671-horsepower hybrid sedan that's genuinely faster than the old V8 car. Obsidian Black with AMG Performance seats in Nappa leather. Burmester sound system, Energizing Comfort package, AMG Night package. This is the perfect Miami daily driver: fast, luxurious, and just exotic enough to turn heads at the valet.",
     images: [
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Mercedes-Benz of Coral Gables",
