@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     siteName: "GridLocal Miami Cars",
     images: [
       {
-        url: "https://picsum.photos/seed/og-miami/1200/630",
+        url: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=1200&h=630&fit=crop",
         width: 1200,
         height: 630,
-        alt: "GridLocal Miami Cars",
+        alt: "GridLocal Miami Cars — Exotic Car Culture",
       },
     ],
   },
