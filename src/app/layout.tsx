@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     siteName: "GridLocal Miami Cars",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?w=1200&h=630&fit=crop",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ferrari_Testarossa_%281990%29_%2852864606105%29.jpg/1280px-Ferrari_Testarossa_%281990%29_%2852864606105%29.jpg",
         width: 1200,
         height: 630,
-        alt: "GridLocal Miami Cars — Exotic Car Culture",
+        alt: "GridLocal Miami Cars — White Ferrari Testarossa, Miami Vice Style",
       },
     ],
   },
