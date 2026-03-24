@@ -17,13 +17,12 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm text-gray-400 mb-4">
-              Miami&apos;s #1 source for car culture, exotic listings, and automotive events — powered by AI.
+              Miami&apos;s #1 source for car culture, exotic listings, and automotive events — 
             </p>
             <div className="flex items-center gap-1 bg-primary/20 border border-primary/30 rounded-full px-3 py-1.5 w-fit">
               <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v1h8v-1zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-1a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v1h-3zM4.75 12.094A5.973 5.973 0 004 15v1H1v-1a3 3 0 013.75-2.906z" />
               </svg>
-              <span className="text-xs text-primary font-bold">Powered by AI</span>
             </div>
           </div>
 

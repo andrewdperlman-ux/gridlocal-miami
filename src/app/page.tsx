@@ -10,7 +10,7 @@ import { getPosts, getListings, getEvents } from "@/lib/ghost";
 export const metadata: Metadata = {
   title: "GridLocal Miami Cars — Miami's #1 Source for Car Culture, Listings & Events",
   description:
-    "Miami's #1 source for exotic car culture, local car meets, vehicle listings, and automotive events. Powered by AI.",
+    "Miami's #1 source for exotic car culture, local car meets, vehicle listings, and automotive events. ",
 };
 
 export default async function HomePage() {

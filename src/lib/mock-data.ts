@@ -19,9 +19,9 @@ export const mockArticles: Article[] = [
       <p>While the exotics grabbed the spotlight, the true crowd-pleaser was an immaculate 1987 Buick Grand National. Black on black, completely stock from the outside, sitting on the original wheels. The owner lifted the hood to reveal a built 3.8L turbo V6 making north of 600 horsepower. The crowd lost it.</p>
       <p>That's the magic of Supercar Saturdays — you never know what's going to show up. See you next week.</p>
     `,
-    featuredImage: "https://picsum.photos/seed/supercar-sat/1200/630",
+    featuredImage: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1200&h=630&fit=crop",
     category: "Events",
-    author: { name: "GridLocal AI", avatar: "https://picsum.photos/seed/author1/80/80" },
+    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
     publishedAt: "2026-03-22T10:00:00Z",
     readingTime: 4,
     tags: ["supercar saturday", "exotic cars", "bal harbour", "miami"],
@@ -44,9 +44,9 @@ export const mockArticles: Article[] = [
       <h2>The Scene is Alive</h2>
       <p>Miami's car culture often gets overshadowed by the nightlife and the beaches, but events like this prove it's one of the most vibrant automotive scenes in the country. Mark your calendars: next meet is the last Friday of April.</p>
     `,
-    featuredImage: "https://picsum.photos/seed/wynwood-meet/1200/630",
+    featuredImage: "https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?w=1200&h=630&fit=crop",
     category: "Events",
-    author: { name: "GridLocal AI", avatar: "https://picsum.photos/seed/author2/80/80" },
+    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
     publishedAt: "2026-03-20T08:30:00Z",
     readingTime: 5,
     tags: ["wynwood", "car meet", "miami", "street cars", "JDM"],
@@ -70,9 +70,9 @@ export const mockArticles: Article[] = [
       <p>Beyond the obvious Ferraris and Lamborghinis, keep your eyes peeled for: Bugatti Veyron/Chirons (Miami has at least 12 registered), Koenigsegg Ageras and Regeras (two confirmed local owners), Pagani Huayras (one well-known local collector has three), and the occasional LaFerrari or Porsche 918.</p>
       <p>Pro tip: Follow @gridlocal_miami on Instagram for real-time sighting alerts from our network of spotters throughout the city.</p>
     `,
-    featuredImage: "https://picsum.photos/seed/brickell-spot/1200/630",
+    featuredImage: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&h=630&fit=crop",
     category: "Spotlights",
-    author: { name: "GridLocal AI", avatar: "https://picsum.photos/seed/author3/80/80" },
+    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
     publishedAt: "2026-03-18T14:00:00Z",
     readingTime: 6,
     tags: ["brickell", "exotic cars", "car spotting", "ferraris", "miami guide"],
@@ -95,9 +95,9 @@ export const mockArticles: Article[] = [
       <p>What makes the Miami show unique is its attendees. Unlike Detroit (industry insiders) or LA (media-heavy), Miami draws genuine buyers. The man standing next to you looking at that Rolls-Royce Spectre is quite possibly about to write a check for one. It gives the show an energy unlike any other.</p>
       <p>The show runs November 7-16 at the Miami Beach Convention Center. Tickets go on sale September 1.</p>
     `,
-    featuredImage: "https://picsum.photos/seed/miami-auto-show/1200/630",
+    featuredImage: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&h=630&fit=crop",
     category: "News",
-    author: { name: "GridLocal AI", avatar: "https://picsum.photos/seed/author4/80/80" },
+    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
     publishedAt: "2026-03-15T09:00:00Z",
     readingTime: 5,
     tags: ["auto show", "miami", "2026", "ferrari", "electric cars"],
@@ -119,9 +119,9 @@ export const mockArticles: Article[] = [
       <h2>The Smart Money</h2>
       <p>Our sources tell us the smart collectors are currently focused on: early McLaren P1s (sub-$1.5M and climbing), Porsche Carrera GTs (the manual V10 hypercar is undervalued relative to its competition), and early 2000s Honda NSXes in original condition.</p>
     `,
-    featuredImage: "https://picsum.photos/seed/miami-market/1200/630",
+    featuredImage: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&h=630&fit=crop",
     category: "Market Trends",
-    author: { name: "GridLocal AI", avatar: "https://picsum.photos/seed/author5/80/80" },
+    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
     publishedAt: "2026-03-12T11:00:00Z",
     readingTime: 7,
     tags: ["market trends", "exotic cars", "investment", "ferrari", "porsche"],
@@ -145,9 +145,9 @@ export const mockArticles: Article[] = [
       <p>Dealer recommendations: Braman Motorcars (authorized Ferrari/McLaren/Bentley/Rolls-Royce, excellent certified pre-owned inventory), Prestige Imports (Lamborghini/Aston Martin, excellent service reputation), and Warren Henry (Aston Martin, McLaren).</p>
       <p>For private sales, Barrett-Jackson's Palm Beach auction in April and the various Broad Arrow events in South Florida offer curated inventory with known provenance.</p>
     `,
-    featuredImage: "https://picsum.photos/seed/buyer-guide/1200/630",
+    featuredImage: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1200&h=630&fit=crop",
     category: "Buyer Guides",
-    author: { name: "GridLocal AI", avatar: "https://picsum.photos/seed/author6/80/80" },
+    author: { name: "GridLocal AI", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
     publishedAt: "2026-03-08T13:00:00Z",
     readingTime: 9,
     tags: ["buyer guide", "exotic cars", "first time buyer", "miami", "porsche", "ferrari"],
@@ -170,9 +170,9 @@ export const mockListings: Listing[] = [
     description:
       "Stunning example of the naturally aspirated V10 masterpiece. Arancio Borealis (pearl orange) exterior over black Alcantara interior. Full PPF, ceramic coating, titanium Akrapovic exhaust. 1 owner, always stored in climate-controlled garage. Never tracked. Full Lamborghini service history at Prestige Imports Miami.",
     images: [
-      "https://picsum.photos/seed/huracan1/800/600",
-      "https://picsum.photos/seed/huracan2/800/600",
-      "https://picsum.photos/seed/huracan3/800/600",
+      "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "PrivateSeller",
@@ -195,9 +195,9 @@ export const mockListings: Listing[] = [
     description:
       "Frame-off restoration completed 2022. Wimbledon White with Parchment interior. Matching numbers 390 FE big block V8. 4-speed toploader manual. Concours-level restoration with correct date-coded parts throughout. Show winner — took Best of Show at Palm Beach Concours 2024.",
     images: [
-      "https://picsum.photos/seed/mustang1/800/600",
-      "https://picsum.photos/seed/mustang2/800/600",
-      "https://picsum.photos/seed/mustang3/800/600",
+      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Barrett-Jackson",
@@ -220,9 +220,9 @@ export const mockListings: Listing[] = [
     description:
       "One of the last great naturally aspirated manual sports cars. Guards Red with black leather sport seats. 6-speed manual transmission (the one to have). Clubsport package with roll cage, fire extinguisher, and harness bar. Sport Chrono, PCCB ceramic brakes. Absolutely immaculate.",
     images: [
-      "https://picsum.photos/seed/gt31/800/600",
-      "https://picsum.photos/seed/gt32/800/600",
-      "https://picsum.photos/seed/gt33/800/600",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Braman Motorcars",
@@ -245,8 +245,8 @@ export const mockListings: Listing[] = [
     description:
       "Championship White FK8 with extensive tasteful modifications. Hondata FlashPro tune, Tein coilovers, Enkei RPF1 wheels, Injen intake, GReddy exhaust. Stock engine internals — all power mods are bolt-on, nothing forced. Street legal, daily driven. Clean title, no accidents.",
     images: [
-      "https://picsum.photos/seed/type-r1/800/600",
-      "https://picsum.photos/seed/type-r2/800/600",
+      "https://images.unsplash.com/photo-1679239872583-5aeaaee8e498?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1679239872583-5aeaaee8e498?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Cars & Bids",
@@ -268,9 +268,9 @@ export const mockListings: Listing[] = [
     description:
       "Ferrari's first series-production PHEV hypercar. Commissioned through the Ferrari atelier program in a unique bespoke Grigio Ferro with yellow racing stripe. Assetto Fiorano package with Multimatic shock absorbers, pyrolytic carbon fiber seats, and Michelin Pilot Sport Cup 2R tires. Under 2,000 miles. Extraordinary.",
     images: [
-      "https://picsum.photos/seed/sf90-1/800/600",
-      "https://picsum.photos/seed/sf90-2/800/600",
-      "https://picsum.photos/seed/sf90-3/800/600",
+      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Braman Motorcars",
@@ -293,8 +293,8 @@ export const mockListings: Listing[] = [
     description:
       "The pinnacle of American muscle. Fathom Green over black vinyl bench seat. LS6 454 cubic inch V8 — the most powerful engine available to the public from any American manufacturer in 1970. Numbers matching. M21 4-speed close-ratio manual. Marti Report and build sheet included. A true investment-grade collector car.",
     images: [
-      "https://picsum.photos/seed/chevelle1/800/600",
-      "https://picsum.photos/seed/chevelle2/800/600",
+      "https://images.unsplash.com/photo-1612544448445-b8232cff3b6c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1612544448445-b8232cff3b6c?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Mecum Auctions",
@@ -317,8 +317,8 @@ export const mockListings: Listing[] = [
     description:
       "Full TRA Kyoto Rocket Bunny widebody kit, professionally installed with matching paint. JB4 tune, downpipe, and charge pipe for approximately 450whp. KW V3 coilovers. Volk Racing TE37 Ultra 19-inch wheels. Recaro bucket seats. Daily driveable but properly fast. One of the cleanest Supras in South Florida.",
     images: [
-      "https://picsum.photos/seed/supra1/800/600",
-      "https://picsum.photos/seed/supra2/800/600",
+      "https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Cars & Bids",
@@ -340,8 +340,8 @@ export const mockListings: Listing[] = [
     description:
       "The controversial but spectacular new C63 — a 671-horsepower hybrid sedan that's genuinely faster than the old V8 car. Obsidian Black with AMG Performance seats in Nappa leather. Burmester sound system, Energizing Comfort package, AMG Night package. This is the perfect Miami daily driver: fast, luxurious, and just exotic enough to turn heads at the valet.",
     images: [
-      "https://picsum.photos/seed/c63-1/800/600",
-      "https://picsum.photos/seed/c63-2/800/600",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
     ],
     sourceUrl: "#",
     sourceName: "Mercedes-Benz of Coral Gables",
@@ -363,7 +363,7 @@ export const mockEvents: Event[] = [
     address: "9700 Collins Ave, Bal Harbour, FL 33154",
     description:
       "The weekly Supercar Saturday gathering at Bal Harbour Shops — South Florida's premier weekend car meet. Free to attend, all makes and models welcome. Exotic, classic, and modified cars fill the parking lot every Saturday morning. Arrive early for the best spots.",
-    image: "https://picsum.photos/seed/event-ss/800/500",
+    image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&h=500&fit=crop",
     link: "#",
     category: "Car Meet",
   },
@@ -377,7 +377,7 @@ export const mockEvents: Event[] = [
     address: "NW 2nd Ave & NW 24th St, Miami, FL 33127",
     description:
       "The biggest monthly car meet in Miami. All cars welcome, from daily drivers to supercars. The Wynwood murals provide an unbeatable backdrop. Food trucks, DJ, and of course, incredible cars. Last meet drew over 300 vehicles.",
-    image: "https://picsum.photos/seed/event-wynwood/800/500",
+    image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800&h=500&fit=crop",
     link: "#",
     category: "Car Meet",
   },
@@ -391,7 +391,7 @@ export const mockEvents: Event[] = [
     address: "One South County Rd, Palm Beach, FL 33480",
     description:
       "The world's most prestigious Ferrari concours. Held annually on the manicured lawns of The Breakers, the Cavallino Classic draws Ferrari collectors and enthusiasts from around the world. Features a concours competition, Ferrari market, and intimate dinners with factory representatives.",
-    image: "https://picsum.photos/seed/event-cavallino/800/500",
+    image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=500&fit=crop",
     link: "#",
     category: "Exhibition",
   },
@@ -405,7 +405,7 @@ export const mockEvents: Event[] = [
     address: "1 Speedway Blvd, Homestead, FL 33035",
     description:
       "Open track day at Homestead-Miami Speedway organized by Miami Track Day Club. All skill levels welcome. HPDE instruction available for beginners. Tech inspection required. Run groups from novice to advanced. Brings your helmet and your fastest car — or rent from our fleet.",
-    image: "https://picsum.photos/seed/event-track/800/500",
+    image: "https://images.unsplash.com/photo-1541348263662-e068662d82af?w=800&h=500&fit=crop",
     link: "#",
     category: "Track Day",
   },

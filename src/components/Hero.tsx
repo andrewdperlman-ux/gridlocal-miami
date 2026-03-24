@@ -12,13 +12,13 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Miami's Car Culture, Powered by AI",
+  title = "Miami's Car Culture Hub",
   subtitle = "The definitive source for exotic car spotting, South Florida car meets, exclusive listings, and automotive news — curated daily by AI for Miami's car obsessed.",
   ctaText = "Explore Articles",
   ctaHref = "/articles",
   secondaryCtaText = "Browse Listings",
   secondaryCtaHref = "/listings",
-  imageUrl = "https://picsum.photos/seed/miami-hero/1920/1080",
+  imageUrl = "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1920&h=1080&fit=crop",
   badge = "🚗 Miami's #1 Car Culture Hub",
 }: HeroProps) {
   return (

@@ -33,7 +33,7 @@ function ghostPostToArticle(post: any): Article {
     title: post.title,
     excerpt: post.excerpt || post.custom_excerpt || "",
     content: post.html || "",
-    featuredImage: post.feature_image || "https://picsum.photos/seed/ghost/1200/630",
+    featuredImage: post.feature_image || "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&h=630&fit=crop",
     category: (post.primary_tag?.name as Article["category"]) || "News",
     author: {
       name: post.primary_author?.name || "GridLocal AI",
