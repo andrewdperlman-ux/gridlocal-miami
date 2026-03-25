@@ -86,12 +86,19 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
+            <p className="text-sm text-gray-400 mb-3">
+              <a href="mailto:contact@gridlocal.io" className="hover:text-white transition-colors">
+                contact@gridlocal.io
+              </a>
+            </p>
             <p className="text-xs text-gray-500">
-              © {new Date().getFullYear()} GridLocal Miami Cars. All rights reserved.
+              © {new Date().getFullYear()} Flaming Go LLC. All rights reserved.
             </p>
             <p className="text-xs text-gray-600 mt-1">
               Editorial content is AI-generated. See our{" "}
               <Link href="/about" className="hover:text-gray-400 underline">disclosure policy</Link>.
+              {" · "}
+              <Link href="/terms" className="hover:text-gray-400 underline">Terms &amp; Conditions</Link>
             </p>
           </div>
         </div>
