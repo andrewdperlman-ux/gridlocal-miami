@@ -19,7 +19,9 @@ interface ArticlesPageProps {
 }
 
 export default async function ArticlesPage({ searchParams }: ArticlesPageProps) {
-  const articles = await getPosts();
+  const articles = (await getPosts()).sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
   
   const activeCategory = searchParams.category as ArticleCategory | undefined;
   const searchQuery = searchParams.q?.toLowerCase();
