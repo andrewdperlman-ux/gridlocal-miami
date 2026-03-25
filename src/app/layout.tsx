@@ -46,6 +46,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="impact-site-verification" content="b45cd306-2b85-48b0-858a-69d255a1e9f6" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYF8GFWD03" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HYF8GFWD03');`,
+          }}
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3399354024239327"
