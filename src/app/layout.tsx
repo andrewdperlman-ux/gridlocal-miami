@@ -51,6 +51,8 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3399354024239327"
           crossOrigin="anonymous"
         />
+        <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
+        <script async src="https://www.instagram.com/embed.js" />
       </head>
       <body className="min-h-screen flex flex-col">
         <Header />
