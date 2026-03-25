@@ -45,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="impact-site-verification" content="b45cd306-2b85-48b0-858a-69d255a1e9f6" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3399354024239327"
