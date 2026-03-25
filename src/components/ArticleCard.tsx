@@ -8,7 +8,7 @@ const categoryColors: Record<string, string> = {
   Spotlights: "bg-purple-100 text-purple-700",
   "Market Trends": "bg-yellow-100 text-yellow-700",
   "Buyer Guides": "bg-orange-100 text-orange-700",
-  "Reviews": "bg-teal-100 text-teal-700",
+  "GridLocal Picks": "bg-teal-100 text-teal-700",
 };
 
 interface ArticleCardProps {

@@ -19,7 +19,7 @@ export type ArticleCategory =
   | "Spotlights"
   | "Market Trends"
   | "Buyer Guides"
-  | "Reviews";
+  | "GridLocal Picks";
 
 export interface Author {
   name: string;
