@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">Categories</h3>
             <ul className="space-y-2 text-sm">
-              {["News", "Events", "Spotlights", "Market Trends", "Buyer Guides"].map((cat) => (
+              {["News", "Events", "Spotlights", "Market Trends", "Buyer Guides", "Reviews"].map((cat) => (
                 <li key={cat}>
                   <Link
                     href={`/articles?category=${encodeURIComponent(cat)}`}

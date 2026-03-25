@@ -18,7 +18,8 @@ export type ArticleCategory =
   | "Events"
   | "Spotlights"
   | "Market Trends"
-  | "Buyer Guides";
+  | "Buyer Guides"
+  | "Reviews";
 
 export interface Author {
   name: string;

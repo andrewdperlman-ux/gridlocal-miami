@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Miami car culture news, exotic spotlights, buyer guides, and market trends — updated daily by GridLocal AI.",
 };
 
-const CATEGORIES: ArticleCategory[] = ["News", "Events", "Spotlights", "Market Trends", "Buyer Guides"];
+const CATEGORIES: ArticleCategory[] = ["News", "Events", "Spotlights", "Market Trends", "Buyer Guides", "Reviews"];
 const PER_PAGE = 9;
 
 interface ArticlesPageProps {
