@@ -1,5 +1,19 @@
 import type { Article, Listing, Event } from "@/types";
-import { mockArticles, mockListings, mockEvents } from "./mock-data";
+import { mockArticles, mockListings as fallbackListings, mockEvents } from "./mock-data";
+
+// Load data files if they exist
+let dataArticles: Article[] | null = null;
+let dataListings: Listing[] | null = null;
+
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  dataArticles = require("@/data/articles.json") as Article[];
+} catch { dataArticles = null; }
+
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  dataListings = require("@/data/listings.json") as Listing[];
+} catch { dataListings = null; }
 
 // Ghost Content API integration
 // Falls back to mock data when GHOST_URL/KEY are not configured
@@ -49,8 +63,9 @@ function ghostPostToArticle(post: any): Article {
 }
 
 export async function getPosts(): Promise<Article[]> {
+  const allArticles = dataArticles && dataArticles.length > 0 ? dataArticles : mockArticles;
   const api = await getGhostApi();
-  if (!api) return mockArticles;
+  if (!api) return allArticles;
   
   try {
     const posts = await api.posts.browse({
@@ -60,30 +75,32 @@ export async function getPosts(): Promise<Article[]> {
     });
     return posts.map(ghostPostToArticle);
   } catch {
-    return mockArticles;
+    return allArticles;
   }
 }
 
 export async function getPostBySlug(slug: string): Promise<Article | null> {
+  const allArticles = dataArticles && dataArticles.length > 0 ? dataArticles : mockArticles;
   const api = await getGhostApi();
   
   if (!api) {
-    return mockArticles.find((a) => a.slug === slug) || null;
+    return allArticles.find((a) => a.slug === slug) || null;
   }
   
   try {
     const post = await api.posts.read({ slug }, { include: "tags,authors" });
     return ghostPostToArticle(post);
   } catch {
-    return mockArticles.find((a) => a.slug === slug) || null;
+    return allArticles.find((a) => a.slug === slug) || null;
   }
 }
 
 export async function getPostsByTag(tag: string): Promise<Article[]> {
+  const allArticles = dataArticles && dataArticles.length > 0 ? dataArticles : mockArticles;
   const api = await getGhostApi();
   
   if (!api) {
-    return mockArticles.filter((a) =>
+    return allArticles.filter((a) =>
       a.tags.some((t) => t.toLowerCase() === tag.toLowerCase()) ||
       a.category.toLowerCase() === tag.toLowerCase()
     );
@@ -96,17 +113,19 @@ export async function getPostsByTag(tag: string): Promise<Article[]> {
     });
     return posts.map(ghostPostToArticle);
   } catch {
-    return mockArticles;
+    return allArticles;
   }
 }
 
-// Listings — from mock data (extend with your own DB or CMS)
+// Listings — from data file or fallback mock data
+const allListings = dataListings && dataListings.length > 0 ? dataListings : fallbackListings;
+
 export async function getListings(): Promise<Listing[]> {
-  return mockListings;
+  return allListings;
 }
 
 export async function getListingBySlug(slug: string): Promise<Listing | null> {
-  return mockListings.find((l) => l.slug === slug) || null;
+  return allListings.find((l) => l.slug === slug) || null;
 }
 
 // Events — from mock data (extend with your own DB or CMS)
