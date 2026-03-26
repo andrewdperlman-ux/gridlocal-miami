@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -46,19 +47,20 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="impact-site-verification" content="b45cd306-2b85-48b0-858a-69d255a1e9f6" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYF8GFWD03" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HYF8GFWD03');`,
-          }}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HYF8GFWD03"
+          strategy="afterInteractive"
         />
-        <script
-          async
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HYF8GFWD03');`}
+        </Script>
+        <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3399354024239327"
+          strategy="afterInteractive"
           crossOrigin="anonymous"
         />
-        <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
-        <script async src="https://www.instagram.com/embed.js" />
+        <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
+        <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
       </head>
       <body className="min-h-screen flex flex-col">
         <Header />
