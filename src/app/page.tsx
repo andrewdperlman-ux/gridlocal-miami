@@ -5,6 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import ListingCard from "@/components/ListingCard";
 import EventCard from "@/components/EventCard";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import InsuranceQuoteForm from "@/components/InsuranceQuoteForm";
 import { getPosts, getListings, getEvents } from "@/lib/ghost";
 
 export const metadata: Metadata = {
@@ -127,6 +128,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Insurance Quote */}
+      <InsuranceQuoteForm />
 
       {/* Newsletter */}
       <NewsletterSignup />
