@@ -62,10 +62,14 @@ function ghostPostToArticle(post: any): Article {
   };
 }
 
+function sortByDate(articles: Article[]): Article[] {
+  return [...articles].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+}
+
 export async function getPosts(): Promise<Article[]> {
   const allArticles = dataArticles && dataArticles.length > 0 ? dataArticles : mockArticles;
   const api = await getGhostApi();
-  if (!api) return allArticles;
+  if (!api) return sortByDate(allArticles);
   
   try {
     const posts = await api.posts.browse({
