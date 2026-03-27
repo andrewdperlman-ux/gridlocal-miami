@@ -126,6 +126,31 @@ export default async function ListingPage({ params }: ListingPageProps) {
                 <p className="text-secondary leading-relaxed">{listing.description}</p>
               </div>
 
+              {/* Insurance CTA */}
+              <div className="rounded-2xl p-6 mb-6" style={{ background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)", border: "1px solid rgba(59,130,246,0.3)" }}>
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl flex-shrink-0">🛡️</div>
+                  <div className="flex-1">
+                    <h3 className="text-white font-bold text-lg mb-1">
+                      Thinking about buying this {listing.make}?
+                    </h3>
+                    <p className="text-slate-400 text-sm mb-4">
+                      Get an insurance quote before you commit. Exotic car owners in Miami save an average of <span className="text-blue-400 font-semibold">$1,200/year</span> with the right coverage.
+                    </p>
+                    <Link
+                      href="/insurance-quote"
+                      className="inline-flex items-center gap-2 font-bold text-white px-5 py-2.5 rounded-lg text-sm transition-opacity hover:opacity-90"
+                      style={{ background: "#f97316" }}
+                    >
+                      Get Insurance Quote
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
               {/* Specs */}
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
                 <h2 className="text-lg font-bold text-secondary mb-4">Vehicle Specs</h2>
