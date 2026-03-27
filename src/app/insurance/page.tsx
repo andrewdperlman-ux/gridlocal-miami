@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import InsuranceQuoteForm from "@/components/InsuranceQuoteForm";
 
 export const metadata: Metadata = {
@@ -60,6 +61,25 @@ export default function InsurancePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* New Quiz CTA Banner */}
+      <section className="py-10 bg-gradient-to-r from-primary/20 to-orange-500/10 border-y border-primary/30">
+        <div className="container-content max-w-3xl mx-auto text-center px-4">
+          <div className="text-3xl mb-3">🏎️</div>
+          <h2 className="text-2xl font-black text-white mb-2">
+            Want to Know What You Should Actually Pay?
+          </h2>
+          <p className="text-gray-400 mb-5">
+            Try our interactive 4-step insurance calculator for an instant personalized premium estimate.
+          </p>
+          <Link
+            href="/insurance-quote"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-orange-600 text-white py-3 px-8 rounded-lg font-black text-lg transition-colors shadow-lg shadow-primary/25"
+          >
+            Take the Insurance Quiz 🚀
+          </Link>
         </div>
       </section>
 

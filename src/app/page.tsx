@@ -5,7 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import ListingCard from "@/components/ListingCard";
 import EventCard from "@/components/EventCard";
 import NewsletterSignup from "@/components/NewsletterSignup";
-import InsuranceQuoteForm from "@/components/InsuranceQuoteForm";
+
 import { getPosts, getListings, getEvents } from "@/lib/ghost";
 
 export const metadata: Metadata = {
@@ -129,8 +129,40 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Insurance Quote */}
-      <InsuranceQuoteForm />
+      {/* Insurance Quote CTA */}
+      <section className="py-16 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div className="container-content max-w-3xl mx-auto text-center px-4">
+          <div className="inline-flex items-center gap-2 bg-primary/20 rounded-full px-4 py-1.5 mb-5">
+            <span className="text-xl">🏎️</span>
+            <span className="text-sm font-bold text-primary">Free Estimate — No Obligation</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
+            How Much Should You Pay for Exotic Car Insurance?
+          </h2>
+          <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
+            Take our 4-step quiz and get an instant premium estimate for your Ferrari, Lamborghini, Porsche, or other exotic — then connect with Miami&apos;s top specialists.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/insurance-quote"
+              className="bg-primary hover:bg-orange-600 text-white py-4 px-10 rounded-lg font-black text-lg transition-colors shadow-lg shadow-primary/25"
+            >
+              Calculate My Insurance Cost 🚀
+            </Link>
+            <Link
+              href="/insurance"
+              className="border border-white/20 hover:border-white/40 text-gray-300 hover:text-white py-4 px-8 rounded-lg font-semibold transition-colors"
+            >
+              Learn About Coverage →
+            </Link>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+            <span>✅ Agreed Value specialists</span>
+            <span>✅ Track day coverage available</span>
+            <span>✅ Average savings: $1,200/year</span>
+          </div>
+        </div>
+      </section>
 
       {/* Newsletter */}
       <NewsletterSignup />
