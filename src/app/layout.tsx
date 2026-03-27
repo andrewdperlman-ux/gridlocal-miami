@@ -53,7 +53,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HYF8GFWD03');`}
+          {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HYF8GFWD03');gtag('config', 'AW-18041420921');`}
         </Script>
         <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3399354024239327"
