@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://miami.gridlocal.io"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io"),
   title: {
     default: "GridLocal Miami Cars — Miami's #1 Source for Car Culture, Listings & Events",
     template: "%s | GridLocal Miami Cars",
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://miami.gridlocal.io",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io",
     siteName: "GridLocal Miami Cars",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ferrari_Testarossa_%281990%29_%2852864606105%29.jpg/1280px-Ferrari_Testarossa_%281990%29_%2852864606105%29.jpg",
-        width: 1200,
-        height: 630,
+        url: "/og-image.jpg",
+        width: 1280,
+        height: 853,
         alt: "GridLocal Miami Cars — White Ferrari Testarossa, Miami Vice Style",
       },
     ],
