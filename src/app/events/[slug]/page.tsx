@@ -34,20 +34,47 @@ export default async function EventPage({ params }: EventPageProps) {
   const date = new Date(event.date);
   const endDate = event.endDate ? new Date(event.endDate) : null;
 
+  const siteUrl = "https://gridlocal.io";
+  const eventUrl = `${siteUrl}/events/${event.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Event",
     name: event.name,
     startDate: event.date,
-    endDate: event.endDate,
+    endDate: event.endDate || event.date,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     location: {
       "@type": "Place",
       name: event.location,
-      address: event.address,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: event.address,
+        addressLocality: "Miami",
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
     },
     description: event.description,
     image: event.image,
-    url: event.link,
+    url: eventUrl,
+    organizer: {
+      "@type": "Organization",
+      name: event.location,
+      url: event.link && event.link !== "#" ? event.link : eventUrl,
+    },
+    performer: {
+      "@type": "Organization",
+      name: "Miami Car Community",
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: eventUrl,
+    },
   };
 
   return (
