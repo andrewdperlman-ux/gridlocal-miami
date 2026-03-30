@@ -55,11 +55,11 @@ export async function POST(req: NextRequest) {
     console.log("⚖️ NEW PI LEAD:", JSON.stringify(lead, null, 2));
 
     // Send email notification
-    const smtpUser = process.env.SMTP_USER;
-    const smtpPass = process.env.SMTP_PASS;
-    const notifyEmail = process.env.NOTIFY_EMAIL || smtpUser;
+    const smtpUser = process.env.SMTP_USER || "andrew@gridlocal.io";
+    const smtpPass = process.env.SMTP_PASS || process.env.GRIDLOCAL_SMTP_PASS;
+    const notifyEmail = process.env.NOTIFY_EMAIL || "andrew@gridlocal.io";
 
-    if (smtpUser && smtpPass) {
+    if (smtpPass) {
       try {
         const transporter = nodemailer.createTransport({
           host: "smtp.gmail.com",
