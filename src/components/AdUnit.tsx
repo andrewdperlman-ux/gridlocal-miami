@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface AdUnitProps {
   slot?: string;
@@ -17,8 +17,9 @@ export default function AdUnit({
   className = "",
   style,
 }: AdUnitProps) {
-  const adRef = useRef<HTMLModElement>(null);
+  const adRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
+  const [filled, setFilled] = useState(false);
 
   useEffect(() => {
     if (pushed.current) return;
@@ -26,15 +27,31 @@ export default function AdUnit({
       const adsbygoogle = (window as any).adsbygoogle || [];
       adsbygoogle.push({});
       pushed.current = true;
+
+      // Check if ad filled after a delay
+      const timer = setTimeout(() => {
+        if (adRef.current) {
+          const ins = adRef.current.querySelector("ins");
+          if (ins && ins.getAttribute("data-ad-status") === "filled") {
+            setFilled(true);
+          } else if (ins && ins.clientHeight > 0) {
+            setFilled(true);
+          }
+        }
+      }, 3000);
+      return () => clearTimeout(timer);
     } catch {
       // AdSense not loaded or blocked
     }
   }, []);
 
   return (
-    <div className={`ad-container my-6 ${className}`}>
+    <div
+      ref={adRef}
+      className={`ad-container ${className}`}
+      style={{ minHeight: filled ? undefined : 0, overflow: "hidden" }}
+    >
       <ins
-        ref={adRef}
         className="adsbygoogle"
         style={style || { display: "block" }}
         data-ad-client="ca-pub-3399354024239327"
