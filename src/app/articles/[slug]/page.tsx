@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
+import { InArticleAd, SidebarAd } from "@/components/AdUnit";
 import { getPostBySlug, getPosts } from "@/lib/ghost";
 
 interface ArticlePageProps {
@@ -144,11 +145,17 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                   {article.excerpt}
                 </p>
 
+                {/* Ad: Top of article */}
+                <InArticleAd />
+
                 {/* Body */}
                 <div
                   className="ghost-content prose max-w-none"
                   dangerouslySetInnerHTML={{ __html: article.content }}
                 />
+
+                {/* Ad: After article content */}
+                <InArticleAd />
 
                 {/* Source */}
                 {article.source && (
@@ -229,6 +236,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                   ) : (
                     <p className="text-sm text-muted">No related articles yet.</p>
                   )}
+
+                  {/* Sidebar Ad */}
+                  <SidebarAd />
 
                   {/* Back link */}
                   <Link

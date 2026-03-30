@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import ArticleCard from "@/components/ArticleCard";
 import CategoryFilter from "@/components/CategoryFilter";
 import SearchBar from "@/components/SearchBar";
+import { BannerAd } from "@/components/AdUnit";
 import { getPosts } from "@/lib/ghost";
 import type { ArticleCategory } from "@/types";
 
@@ -96,6 +97,9 @@ export default async function ArticlesPage({ searchParams }: ArticlesPageProps) 
             ))}
           </div>
         )}
+
+        {/* Ad between articles and pagination */}
+        <BannerAd />
 
         {/* Pagination */}
         {totalPages > 1 && (
