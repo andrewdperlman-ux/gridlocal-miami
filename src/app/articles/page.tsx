@@ -8,7 +8,7 @@ import { getPosts } from "@/lib/ghost";
 import type { ArticleCategory } from "@/types";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/articles" },
+  alternates: { canonical: "https://gridlocal.io/articles" },
   title: "Articles",
   description: "Miami car culture news, exotic spotlights, buyer guides, and market trends — updated daily by GridLocal AI.",
 };

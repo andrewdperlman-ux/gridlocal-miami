@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/terms" },
+  alternates: { canonical: "https://gridlocal.io/terms" },
   title: "Terms & Conditions",
   description: "Terms and Conditions for GridLocal Miami Cars, operated by Flaming Go LLC.",
 };

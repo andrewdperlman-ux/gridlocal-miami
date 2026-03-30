@@ -21,8 +21,13 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io";
   const canonicalUrl = `${siteUrl}/articles/${params.slug}`;
 
+  const truncatedTitle =
+    article.title.length > 55
+      ? article.title.slice(0, 55).trimEnd() + "… | GridLocal"
+      : `${article.title} | GridLocal`;
+
   return {
-    title: article.title,
+    title: truncatedTitle,
     description: article.excerpt.slice(0, 160),
     alternates: {
       canonical: canonicalUrl,

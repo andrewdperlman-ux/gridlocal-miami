@@ -9,7 +9,7 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import { getPosts, getListings, getEvents } from "@/lib/ghost";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/" },
+  alternates: { canonical: "https://gridlocal.io" },
   title: "GridLocal Miami Cars — Miami's #1 Source for Car Culture, Listings & Events",
   description:
     "Miami's #1 source for exotic car culture, local car meets, vehicle listings, and automotive events. ",

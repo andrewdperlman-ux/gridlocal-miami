@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/about" },
+  alternates: { canonical: "https://gridlocal.io/about" },
   title: "About GridLocal Miami Cars",
   description: "Learn about GridLocal Miami Cars — Miami's AI-powered car culture media site and listing aggregator. Including our AI editorial disclosure.",
 };

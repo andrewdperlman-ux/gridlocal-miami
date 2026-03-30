@@ -3,7 +3,7 @@ import AccidentLeadForm from "@/components/AccidentLeadForm";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/accident-claim" },
+  alternates: { canonical: "https://gridlocal.io/accident-claim" },
   title: "Free Car Accident Case Evaluation — Miami | GridLocal",
   description:
     "Were you injured in a car accident in Miami? Get a free case evaluation from an experienced personal injury attorney. No fees unless you win.",

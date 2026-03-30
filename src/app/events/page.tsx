@@ -4,7 +4,7 @@ import EventCard from "@/components/EventCard";
 import { getEvents } from "@/lib/ghost";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/events" },
+  alternates: { canonical: "https://gridlocal.io/events" },
   title: "Car Events",
   description: "Miami's best car meets, auto shows, track days, and automotive events. Your complete guide to South Florida car culture events.",
 };

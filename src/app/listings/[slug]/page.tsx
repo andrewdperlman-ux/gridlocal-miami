@@ -110,6 +110,11 @@ export default async function ListingPage({ params }: ListingPageProps) {
             <span className="text-secondary">{listing.year} {listing.make} {listing.model}</span>
           </nav>
 
+          <h1 className="text-2xl sm:text-3xl font-black text-secondary mb-6">
+            {listing.year} {listing.make} {listing.model}
+            {listing.trim ? ` ${listing.trim}` : ""}
+          </h1>
+
           <div className="lg:grid lg:grid-cols-3 lg:gap-10">
             {/* Left: Photos + Details */}
             <div className="lg:col-span-2">

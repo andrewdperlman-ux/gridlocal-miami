@@ -16,9 +16,15 @@ export async function generateMetadata({ params }: EventPageProps): Promise<Meta
   const event = await getEventBySlug(params.slug);
   if (!event) return { title: "Event Not Found" };
 
+  const siteUrl = "https://gridlocal.io";
+  const canonicalUrl = `${siteUrl}/events/${params.slug}`;
+
   return {
     title: event.name,
     description: event.description.slice(0, 160),
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: event.name,
       description: event.description.slice(0, 160),

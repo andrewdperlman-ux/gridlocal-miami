@@ -3,7 +3,7 @@ import Link from "next/link";
 import InsuranceQuoteForm from "@/components/InsuranceQuoteForm";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/insurance" },
+  alternates: { canonical: "https://gridlocal.io/insurance" },
   title: "Exotic Car Insurance Quotes — Miami | GridLocal",
   description:
     "Get free exotic car insurance quotes from Miami's top-rated agents. Specialists in Ferrari, Lamborghini, Porsche, McLaren, and luxury vehicle coverage. Average savings: $1,200/year.",
