@@ -17,14 +17,27 @@ export async function generateMetadata({ params }: ListingPageProps): Promise<Me
   const listing = await getListingBySlug(params.slug);
   if (!listing) return { title: "Listing Not Found" };
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io";
+  const canonicalUrl = `${siteUrl}/listings/${params.slug}`;
   const title = `${listing.year} ${listing.make} ${listing.model} — ${listing.price.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 })}`;
   return {
     title,
     description: listing.description.slice(0, 160),
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title,
       description: listing.description.slice(0, 160),
-      images: [{ url: listing.images[0], width: 800, height: 600 }],
+      url: canonicalUrl,
+      siteName: "GridLocal Miami Cars",
+      images: [{ url: listing.images[0], width: 800, height: 600, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: listing.description.slice(0, 160),
+      images: [listing.images[0]],
     },
   };
 }
@@ -55,7 +68,7 @@ export default async function ListingPage({ params }: ListingPageProps) {
     year: "numeric",
   });
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://miami.gridlocal.io";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io";
 
   const jsonLd = {
     "@context": "https://schema.org",

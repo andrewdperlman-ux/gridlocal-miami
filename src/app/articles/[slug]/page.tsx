@@ -17,16 +17,30 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   const article = await getPostBySlug(params.slug);
   if (!article) return { title: "Article Not Found" };
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io";
+  const canonicalUrl = `${siteUrl}/articles/${params.slug}`;
+
   return {
     title: article.title,
-    description: article.excerpt,
+    description: article.excerpt.slice(0, 160),
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: article.title,
-      description: article.excerpt,
-      images: [{ url: article.featuredImage, width: 1200, height: 630 }],
+      description: article.excerpt.slice(0, 160),
+      url: canonicalUrl,
+      siteName: "GridLocal Miami Cars",
+      images: [{ url: article.featuredImage, width: 1200, height: 630, alt: article.title }],
       type: "article",
       publishedTime: article.publishedAt,
       authors: [article.author.name],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt.slice(0, 160),
+      images: [article.featuredImage],
     },
   };
 }
@@ -50,7 +64,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     day: "numeric",
   });
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://miami.gridlocal.io";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io";
   const articleUrl = `${siteUrl}/articles/${article.slug}`;
 
   const jsonLd = {

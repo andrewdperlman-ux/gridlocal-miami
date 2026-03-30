@@ -9,6 +9,7 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import { getPosts, getListings, getEvents } from "@/lib/ghost";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: "GridLocal Miami Cars — Miami's #1 Source for Car Culture, Listings & Events",
   description:
     "Miami's #1 source for exotic car culture, local car meets, vehicle listings, and automotive events. ",
@@ -29,11 +30,11 @@ export default async function HomePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "GridLocal Miami Cars",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://miami.gridlocal.io",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io",
     description: "Miami's #1 source for car culture, listings, and events",
     potentialAction: {
       "@type": "SearchAction",
-      target: `${process.env.NEXT_PUBLIC_SITE_URL || "https://miami.gridlocal.io"}/articles?q={search_term_string}`,
+      target: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io"}/articles?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };

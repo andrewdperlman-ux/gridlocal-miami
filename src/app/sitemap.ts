@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getPosts, getListings, getEvents } from "@/lib/ghost";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://miami.gridlocal.io";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io";
 
   const [posts, listings, events] = await Promise.all([
     getPosts(),

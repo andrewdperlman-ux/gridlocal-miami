@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import InsuranceQuiz from "./InsuranceQuiz";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/insurance-quote" },
   title: "How Much Should You Pay for Exotic Car Insurance? | GridLocal Miami",
   description:
     "Take our 4-step exotic car insurance calculator to get a personalized premium estimate for your Ferrari, Lamborghini, Porsche, or other luxury vehicle in Miami.",

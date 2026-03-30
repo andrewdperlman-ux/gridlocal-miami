@@ -5,6 +5,7 @@ import { getListings } from "@/lib/ghost";
 import type { ListingType } from "@/types";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/listings" },
   title: "Car Listings",
   description: "Browse exotic, classic, modified, and daily driver cars for sale in Miami, FL. Updated daily by GridLocal AI.",
 };
