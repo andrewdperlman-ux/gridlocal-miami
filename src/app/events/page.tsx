@@ -20,21 +20,51 @@ export default async function EventsPage() {
     .filter((e) => new Date(e.date) < now)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  const jsonLd = upcoming.map((event) => ({
-    "@context": "https://schema.org",
-    "@type": "Event",
-    name: event.name,
-    startDate: event.date,
-    endDate: event.endDate,
-    location: {
-      "@type": "Place",
-      name: event.location,
-      address: event.address,
-    },
-    description: event.description,
-    image: event.image,
-    url: event.link,
-  }));
+  const siteUrl = "https://gridlocal.io";
+
+  const jsonLd = upcoming.map((event) => {
+    const eventUrl = `${siteUrl}/events/${event.slug}`;
+    return {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: event.name,
+      startDate: event.date,
+      endDate: event.endDate || event.date,
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: event.location,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: event.address,
+          addressLocality: "Miami",
+          addressRegion: "FL",
+          addressCountry: "US",
+        },
+      },
+      description: event.description,
+      image: event.image,
+      url: eventUrl,
+      organizer: {
+        "@type": "Organization",
+        name: event.location,
+        url: event.link && event.link !== "#" ? event.link : eventUrl,
+      },
+      performer: {
+        "@type": "Organization",
+        name: "Miami Car Community",
+      },
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        url: eventUrl,
+        validFrom: new Date(event.date).toISOString().split("T")[0],
+      },
+    };
+  });
 
   return (
     <>

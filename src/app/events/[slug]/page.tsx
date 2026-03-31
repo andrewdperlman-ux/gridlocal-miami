@@ -80,6 +80,7 @@ export default async function EventPage({ params }: EventPageProps) {
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: eventUrl,
+      validFrom: new Date(event.date).toISOString().split("T")[0],
     },
   };
 

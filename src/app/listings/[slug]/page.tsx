@@ -70,10 +70,13 @@ export default async function ListingPage({ params }: ListingPageProps) {
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io";
 
+  const canonicalUrl = `${siteUrl}/listings/${params.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Vehicle",
     name: `${listing.year} ${listing.make} ${listing.model}`,
+    url: canonicalUrl,
     vehicleModelDate: String(listing.year),
     brand: { "@type": "Brand", name: listing.make },
     model: listing.model,
@@ -82,6 +85,7 @@ export default async function ListingPage({ params }: ListingPageProps) {
       price: listing.price,
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
+      url: canonicalUrl,
     },
     description: listing.description,
     image: listing.images,
