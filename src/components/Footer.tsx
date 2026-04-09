@@ -98,6 +98,8 @@ export default function Footer() {
               Editorial content is AI-generated. See our{" "}
               <Link href="/about" className="hover:text-gray-400 underline">disclosure policy</Link>.
               {" · "}
+              <Link href="/privacy" className="hover:text-gray-400 underline">Privacy Policy</Link>
+              {" · "}
               <Link href="/terms" className="hover:text-gray-400 underline">Terms &amp; Conditions</Link>
             </p>
           </div>
