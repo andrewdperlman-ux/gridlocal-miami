@@ -63,6 +63,13 @@ export default function RootLayout({
         />
         <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
         <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
+        <Script id="infolinks-init" strategy="afterInteractive">
+          {`var infolinks_pid = 3444796; var infolinks_wsid = 0;`}
+        </Script>
+        <Script
+          src="//resources.infolinks.com/js/infolinks_main.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className="min-h-screen flex flex-col">
         <Header />
