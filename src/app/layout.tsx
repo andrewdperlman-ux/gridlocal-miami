@@ -77,6 +77,9 @@ document.getElementsByTagName('script')[0],
 '//cdn.taboola.com/libtrc/unip/2023255/tfa.js',
 'tb_tfa_script');`}
         </Script>
+        <Script id="monetag-vignette" strategy="afterInteractive">
+          {`(function(s){s.dataset.zone='10866796',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
+        </Script>
         <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
         <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
         <Script id="infolinks-init" strategy="afterInteractive">
