@@ -61,6 +61,18 @@ export default function RootLayout({
           crossOrigin="anonymous"
           data-overlays="bottom"
         />
+        <Script id="taboola-pixel" strategy="afterInteractive">
+          {`window._tfa = window._tfa || [];
+window._tfa.push({notify: 'event', name: 'page_view', id: 2023255});
+!function (t, f, a, x) {
+  if (!document.getElementById(x)) {
+    t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+  }
+}(document.createElement('script'),
+document.getElementsByTagName('script')[0],
+'//cdn.taboola.com/libtrc/unip/2023255/tfa.js',
+'tb_tfa_script');`}
+        </Script>
         <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
         <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
         <Script id="infolinks-init" strategy="afterInteractive">
