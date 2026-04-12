@@ -46,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="monetag" content="4994e479ef014fa47d8357a2ac63960a" />
         <meta name="impact-site-verification" content="b45cd306-2b85-48b0-858a-69d255a1e9f6" />
         <meta name="fo-verify" content="004f0e07-6dcd-43cd-80c8-f81448b466da" />
         <Script
