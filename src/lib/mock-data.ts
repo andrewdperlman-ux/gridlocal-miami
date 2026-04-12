@@ -364,7 +364,7 @@ export const mockEvents: Event[] = [
     description:
       "The weekly Supercar Saturday gathering at Bal Harbour Shops — South Florida's premier weekend car meet. Free to attend, all makes and models welcome. Exotic, classic, and modified cars fill the parking lot every Saturday morning. Arrive early for the best spots.",
     image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&h=500&fit=crop",
-    link: "#",
+    link: "https://www.supercarsaturdays.com",
     category: "Car Meet",
   },
   {
@@ -378,7 +378,7 @@ export const mockEvents: Event[] = [
     description:
       "The biggest monthly car meet in Miami. All cars welcome, from daily drivers to supercars. The Wynwood murals provide an unbeatable backdrop. Food trucks, DJ, and of course, incredible cars. Last meet drew over 300 vehicles.",
     image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800&h=500&fit=crop",
-    link: "#",
+    link: "https://www.instagram.com/wynwoodcarmeet",
     category: "Car Meet",
   },
   {
@@ -392,7 +392,7 @@ export const mockEvents: Event[] = [
     description:
       "The world's most prestigious Ferrari concours. Held annually on the manicured lawns of The Breakers, the Cavallino Classic draws Ferrari collectors and enthusiasts from around the world. Features a concours competition, Ferrari market, and intimate dinners with factory representatives.",
     image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=500&fit=crop",
-    link: "#",
+    link: "https://www.cavallinoclassic.com",
     category: "Exhibition",
   },
   {
@@ -406,7 +406,7 @@ export const mockEvents: Event[] = [
     description:
       "Open track day at Homestead-Miami Speedway organized by Miami Track Day Club. All skill levels welcome. HPDE instruction available for beginners. Tech inspection required. Run groups from novice to advanced. Brings your helmet and your fastest car — or rent from our fleet.",
     image: "https://images.unsplash.com/photo-1541348263662-e068662d82af?w=800&h=500&fit=crop",
-    link: "#",
+    link: "https://homesteadmiamispeedway.com",
     category: "Track Day",
   },
 ];
