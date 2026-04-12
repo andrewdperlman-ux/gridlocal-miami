@@ -12,13 +12,8 @@ export const metadata: Metadata = {
 export default async function EventsPage() {
   const events = await getEvents();
 
-  const now = new Date();
   const upcoming = events
-    .filter((e) => new Date(e.date) >= now)
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-  const past = events
-    .filter((e) => new Date(e.date) < now)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   const siteUrl = "https://gridlocal.io";
 
@@ -153,19 +148,6 @@ export default async function EventsPage() {
               </div>
             )}
           </section>
-
-          {/* Past Events */}
-          {past.length > 0 && (
-            <section className="mt-16">
-              <h2 className="text-2xl font-bold text-secondary mb-2">Past Events</h2>
-              <p className="text-muted mb-6">Recaps and coverage from past Miami car events</p>
-              <div className="flex flex-col gap-4">
-                {past.map((event) => (
-                  <EventCard key={event.id} event={event} />
-                ))}
-              </div>
-            </section>
-          )}
 
           {/* Submit event CTA */}
           <div className="mt-16 bg-secondary rounded-2xl p-8 text-center text-white">

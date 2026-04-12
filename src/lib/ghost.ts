@@ -134,7 +134,8 @@ export async function getListingBySlug(slug: string): Promise<Listing | null> {
 
 // Events — from mock data (extend with your own DB or CMS)
 export async function getEvents(): Promise<Event[]> {
-  return mockEvents;
+  const now = new Date();
+  return mockEvents.filter((e) => new Date(e.date) >= now);
 }
 
 export async function getEventBySlug(slug: string): Promise<Event | null> {
