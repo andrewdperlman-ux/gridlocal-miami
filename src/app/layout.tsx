@@ -55,6 +55,9 @@ export default function RootLayout({
         <Script id="gtag-init" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HYF8GFWD03');gtag('config', 'AW-18041420921');`}
         </Script>
+        <Script id="gtag-ads-conversion" strategy="afterInteractive">
+          {`gtag('event', 'conversion_event_page_view', {});`}
+        </Script>
         <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3399354024239327"
           strategy="afterInteractive"
