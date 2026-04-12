@@ -78,6 +78,11 @@ document.getElementsByTagName('script')[0],
 'tb_tfa_script');`}
         </Script>
         <Script
+          src="https://5gvci.com/act/files/tag.min.js?z=10867596"
+          strategy="afterInteractive"
+          async
+        />
+        <Script
           src="https://quge5.com/88/tag.min.js"
           data-zone="229010"
           strategy="afterInteractive"
