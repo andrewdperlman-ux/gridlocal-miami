@@ -77,6 +77,9 @@ document.getElementsByTagName('script')[0],
 '//cdn.taboola.com/libtrc/unip/2023255/tfa.js',
 'tb_tfa_script');`}
         </Script>
+        <Script id="monetag-inpage-push" strategy="afterInteractive">
+          {`(function(s){s.dataset.zone='10866810',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
+        </Script>
         <Script id="monetag-vignette" strategy="afterInteractive">
           {`(function(s){s.dataset.zone='10866796',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
         </Script>
