@@ -77,6 +77,12 @@ document.getElementsByTagName('script')[0],
 '//cdn.taboola.com/libtrc/unip/2023255/tfa.js',
 'tb_tfa_script');`}
         </Script>
+        <Script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="229010"
+          strategy="afterInteractive"
+          async
+        />
         <Script id="monetag-inpage-push" strategy="afterInteractive">
           {`(function(s){s.dataset.zone='10866810',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
         </Script>
