@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io"),
   title: {
-    default: "GridLocal Miami Cars — Miami's #1 Source for Car Culture, Listings & Events",
-    template: "%s | GridLocal Miami Cars",
+    default: "GridLocal Miami Cars — Miami Car Culture & Listings",
+    template: "%s | GridLocal",
   },
   description:
     "The definitive source for Miami exotic car culture, local car meets, vehicle listings, and automotive events. AI-powered editorial, updated daily.",
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://gridlocal.io",
     siteName: "GridLocal Miami Cars",
     images: [
       {

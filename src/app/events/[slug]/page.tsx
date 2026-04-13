@@ -28,6 +28,8 @@ export async function generateMetadata({ params }: EventPageProps): Promise<Meta
     openGraph: {
       title: event.name,
       description: event.description.slice(0, 160),
+      url: canonicalUrl,
+      siteName: "GridLocal Miami Cars",
       images: [{ url: event.image }],
     },
   };

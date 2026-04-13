@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   const canonicalUrl = `${siteUrl}/articles/${params.slug}`;
 
   const truncatedTitle =
-    article.title.length > 55
-      ? article.title.slice(0, 55).trimEnd() + "… | GridLocal"
-      : `${article.title} | GridLocal`;
+    article.title.length > 50
+      ? article.title.slice(0, 50).trimEnd() + "…"
+      : article.title;
 
   return {
     title: truncatedTitle,
@@ -153,10 +153,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 {/* Ad: Top of article */}
                 <InArticleAd />
 
-                {/* Body */}
+                {/* Body — downgrade any H1s in Ghost content to H2s to avoid multiple H1 tags */}
                 <div
                   className="ghost-content prose max-w-none"
-                  dangerouslySetInnerHTML={{ __html: article.content }}
+                  dangerouslySetInnerHTML={{
+                    __html: article.content
+                      .replace(/<h1(\s|>)/gi, "<h2$1")
+                      .replace(/<\/h1>/gi, "</h2>"),
+                  }}
                 />
 
                 {/* Ad: After article content */}

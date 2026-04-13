@@ -10,7 +10,7 @@ import { getPosts, getListings, getEvents } from "@/lib/ghost";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://gridlocal.io" },
-  title: "GridLocal Miami Cars — Miami's #1 Source for Car Culture, Listings & Events",
+  title: { absolute: "GridLocal Miami Cars — Miami Car Culture & Listings" },
   description:
     "Miami's #1 source for exotic car culture, local car meets, vehicle listings, and automotive events. ",
 };
