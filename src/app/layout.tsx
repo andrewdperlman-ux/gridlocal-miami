@@ -76,6 +76,10 @@ document.getElementsByTagName('script')[0],
 'tb_tfa_script');`}
         </Script>
 
+        <Script
+          src="https://s.skimresources.com/js/301414X1789374.skimlinks.js"
+          strategy="afterInteractive"
+        />
         <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
         <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
         <Script id="infolinks-init" strategy="afterInteractive">
