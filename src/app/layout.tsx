@@ -45,7 +45,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="monetag" content="4994e479ef014fa47d8357a2ac63960a" />
         <meta name="impact-site-verification" content="b45cd306-2b85-48b0-858a-69d255a1e9f6" />
         <meta name="fo-verify" content="004f0e07-6dcd-43cd-80c8-f81448b466da" />
         <Script
@@ -76,23 +75,7 @@ document.getElementsByTagName('script')[0],
 '//cdn.taboola.com/libtrc/unip/2023255/tfa.js',
 'tb_tfa_script');`}
         </Script>
-        <Script
-          src="https://5gvci.com/act/files/tag.min.js?z=10867596"
-          strategy="afterInteractive"
-          async
-        />
-        <Script
-          src="https://quge5.com/88/tag.min.js"
-          data-zone="229010"
-          strategy="afterInteractive"
-          async
-        />
-        <Script id="monetag-inpage-push" strategy="afterInteractive">
-          {`(function(s){s.dataset.zone='10866810',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
-        </Script>
-        <Script id="monetag-vignette" strategy="afterInteractive">
-          {`(function(s){s.dataset.zone='10866796',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`}
-        </Script>
+
         <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
         <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
         <Script id="infolinks-init" strategy="afterInteractive">
